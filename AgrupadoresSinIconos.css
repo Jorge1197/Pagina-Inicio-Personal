@@ -1,0 +1,20 @@
+/* Ocultar favicon en pestañas que funcionan como Agrupadores (Pilas) */
+
+/* Caso 1: Pila cerrada con contador (ej. tu grupo "Poubelle") */
+.tab-strip .tab:has(.stack-counter) .favicon {
+    display: none !important;
+}
+
+/* Caso 2: Pila tipo Acordeón o Grupo Padre (ej. tu grupo "Personal") */
+/* La clase 'is-group' suele identificar al encabezado del grupo */
+.tab-strip .tab.is-group .favicon {
+    display: none !important;
+}
+
+/* Opcional: Ajustar el texto para que no quede pegado al borde izquierdo al quitar el icono */
+.tab-strip .tab:has(.stack-counter) .title,
+.tab-strip .tab.is-group .title {
+    padding-left: 8px !important;
+    display: flex;
+    justify-content: center; /* Intenta centrar el título si lo deseas */
+}
