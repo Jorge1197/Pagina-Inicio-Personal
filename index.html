@@ -59,25 +59,28 @@
     </div>
 
     <script>
-        /* --- CONFIGURACIÓN DE FONDOS --- */
-        /* Agrega aquí los enlaces a tus imágenes o nombres de archivo locales */
-        const wallpapers = [
-            "/Pagina-Inicio-Personal/fondos/Fondo1.jpeg", 
-            "/Pagina-Inicio-Personal/fondos/Fondo2.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo3.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo4.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo5.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo6.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo7.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo8.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo9.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo10.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo11.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo12.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo13.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo14.jpg",
-            "/Pagina-Inicio-Personal/fondos/Fondo15.jpg",
-        ];
+    // --- CONFIGURACIÓN DE FONDOS ---
+    // Define la URL base de tu repositorio en bruto
+    const BASE_URL = "https://raw.githubusercontent.com/Jorge1197/Pagina-Inicio-Personal/main/fondos/";
+    
+    const wallpapers = [
+        // Usamos la URL base + el nombre del archivo
+        BASE_URL + "Fondo1.jpeg", 
+        BASE_URL + "Fondo2.jpg",
+        BASE_URL + "Fondo3.jpg",
+        BASE_URL + "Fondo4.jpg",
+        BASE_URL + "Fondo5.jpg",
+        BASE_URL + "Fondo6.jpg",
+        BASE_URL + "Fondo7.jpg",
+        BASE_URL + "Fondo8.jpg",
+        BASE_URL + "Fondo9.jpg",
+        BASE_URL + "Fondo10.jpg",
+        BASE_URL + "Fondo11.jpg",
+        BASE_URL + "Fondo12.jpg",
+        BASE_URL + "Fondo13.jpg",
+        BASE_URL + "Fondo14.jpg",
+        BASE_URL + "Fondo15.jpg",
+    ];
 
         /* --- LÓGICA DEL RELOJ Y SALUDO --- */
         function updateTime() {
@@ -111,5 +114,6 @@
 
 </body>
 </html>
+
 
 
